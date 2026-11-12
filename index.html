@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PANELMAP · Decision Intelligence Platform</title>
+  <meta name="description" content="PANELMAP conecta los datos de tu organización y aplica Inteligencia Artificial para comprender cómo funciona, anticipar escenarios y orientar dónde actuar.">
+  <meta name="theme-color" content="#0b1230">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#inicio" class="brand" aria-label="PANELMAP, inicio">
+        <svg class="brand__mark" viewBox="0 0 48 40" aria-hidden="true">
+          <circle cx="5" cy="17" r="4.5" fill="currentColor"/>
+          <circle cx="16" cy="17" r="3" fill="currentColor"/>
+          <path d="M24 37V6h9.5a10.5 10.5 0 0 1 0 21H26" fill="none" stroke="var(--blue-500)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="33" cy="16.5" r="3.4" fill="currentColor"/>
+        </svg>
+        <span class="brand__name">PANELMAP</span>
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Principal">
+        <a href="#que-es">Plataforma</a>
+        <a href="#problema">Problema y solución</a>
+        <a href="#ia">Inteligencia Artificial</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#para-quien">Para quién</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacto" class="btn btn--primary nav__cta">Solicitar una demo <span aria-hidden="true">↗</span></a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- PORTADA -->
+    <section class="hero" id="inicio">
+      <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="container hero__inner">
+        <p class="eyebrow eyebrow--light reveal">Decision Intelligence Platform</p>
+        <h1 class="hero__title reveal">Una plataforma común.<br><span>Una lectura propia de tu organización.</span></h1>
+        <p class="hero__lead reveal">Conectamos los datos de tu organización y aplicamos Inteligencia Artificial para comprender cómo funciona, anticipar escenarios y orientar dónde actuar. Una visión del conjunto para identificar oportunidades de reducir costes y mejorar procesos.</p>
+        <div class="hero__actions reveal">
+          <a href="#contacto" class="btn btn--primary btn--lg">Solicitar una demo <span aria-hidden="true">↗</span></a>
+          <a href="#como-funciona" class="btn btn--ghost btn--lg">Cómo funciona</a>
+        </div>
+        <ul class="hero__chips reveal" aria-label="Capacidades">
+          <li>Datos conectados</li>
+          <li>IA nativa</li>
+          <li>Procesamiento en tu entorno</li>
+        </ul>
+      </div>
+      <a href="#que-es" class="hero__scroll" aria-label="Bajar a la siguiente sección"><span></span></a>
+    </section>
+
+    <!-- QUÉ ES -->
+    <section class="section" id="que-es">
+      <div class="container">
+        <div class="split">
+          <div class="reveal">
+            <p class="eyebrow">Qué es PANELMAP</p>
+            <h2 class="h2">Inteligencia para la toma de decisiones, construida sobre tus datos.</h2>
+          </div>
+          <p class="lead reveal">PANELMAP es una empresa tecnológica de IA nativa. Nuestra Plataforma de Inteligencia para la toma de Decisiones (Decision Intelligence Platform) interconecta y analiza datos directos e indirectos para ayudar a empresas e instituciones a detectar patrones, anticipar escenarios e identificar oportunidades que permitan reducir costes, optimizar procesos y tomar mejores decisiones.</p>
+        </div>
+
+        <div class="cards cards--4">
+          <article class="card reveal">
+            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></span>
+            <h3>Comprender lo que ocurre</h3>
+            <p>Relaciona actividad, recursos y resultados para disponer de una lectura compartida de la organización e investigar los factores asociados a sus cambios.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 17l5-5 4 3 8-8"/><path d="M15 7h5v5"/></svg></span>
+            <h3>Anticipar escenarios</h3>
+            <p>Explora patrones y señales de riesgo. Cuando el caso de uso lo permite, incorpora análisis prospectivos para valorar cómo podría evolucionar una situación y preparar la respuesta.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><circle cx="12" cy="12" r="4"/></svg></span>
+            <h3>Identificar oportunidades de mejora</h3>
+            <p>Detecta desequilibrios, desviaciones y conexiones relevantes para valorar dónde revisar costes, procesos o asignación de recursos.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4.5 2 7.5L12 16.5 5.5 21l2-7.5L2 9h7z"/></svg></span>
+            <h3>Orientar decisiones y actuaciones</h3>
+            <p>Utiliza la inteligencia generada para establecer prioridades, valorar alternativas y seguir los resultados de las decisiones de tus equipos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- VÍDEO -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="video reveal">
+          <div class="video__grid" aria-hidden="true"></div>
+          <button class="video__play" type="button" id="videoPlay" aria-label="Reproducir vídeo de presentación">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          <p class="video__caption">Descubre cómo PANELMAP conecta los datos con el funcionamiento de tu organización.</p>
+          <p class="video__soon" id="videoSoon" hidden>Vídeo disponible próximamente.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEMA / SOLUCIÓN -->
+    <section class="section section--sky" id="problema">
+      <div class="container">
+        <div class="ps__head reveal">
+          <div>
+            <p class="eyebrow">De A a B</p>
+            <h2 class="h2" id="psTitle">Tener datos no basta para saber dónde actuar.</h2>
+          </div>
+          <div class="switch" role="tablist" aria-label="Ver problema o solución">
+            <span class="switch__thumb" aria-hidden="true"></span>
+            <button role="tab" id="tabProblem" aria-selected="true" aria-controls="panelProblem" data-state="problem">El problema</button>
+            <button role="tab" id="tabSolution" aria-selected="false" aria-controls="panelSolution" data-state="solution" tabindex="-1">La solución</button>
+          </div>
+        </div>
+
+        <div class="ps" data-state="problem" id="ps">
+          <div class="ps__visual reveal" aria-hidden="true">
+            <svg id="psSvg" viewBox="0 0 520 440"></svg>
+            <p class="ps__legend"><span class="lg lg--a"></span>Sistemas de gestión <span class="lg lg--b"></span>Documentos <span class="lg lg--c"></span>Contexto</p>
+          </div>
+
+          <div class="ps__panels">
+            <div class="ps__panel" role="tabpanel" id="panelProblem" aria-labelledby="tabProblem">
+              <p class="lead">Tu organización genera información de forma continua. Una parte queda registrada en los sistemas de gestión; otra se encuentra en documentos, interacciones y fuentes que aportan contexto. Cuando esas piezas permanecen separadas, resulta difícil comprender el conjunto y convertirlo en decisiones concretas.</p>
+              <ol class="points">
+                <li><h3>Información repartida entre sistemas y equipos</h3><p>Los datos están distribuidos entre herramientas, bases de datos, documentos y departamentos. Cada fuente recoge una parte de la actividad, con estructuras y criterios que no siempre permiten relacionarla con las demás.</p></li>
+                <li><h3>Datos que no encajan en la misma tabla</h3><p>Los registros del ERP conviven con contratos, incidencias, correos y otras evidencias. Su formato es distinto, pero pueden explicar una misma situación. Conectarlos exige interpretar qué representan y cómo se relacionan.</p></li>
+                <li><h3>Relaciones relevantes que pasan desapercibidas</h3><p>Una variación en un indicador puede estar vinculada a cambios en la demanda, las condiciones de un servicio o la disponibilidad de recursos. El análisis aislado dificulta investigar esas dependencias y valorar su relevancia.</p></li>
+                <li><h3>Una visión del estado de la organización difícil de construir</h3><p>Reunir informes y métricas de distintas áreas puede exigir tiempo y trabajo manual. Mientras tanto, la actividad sigue cambiando y cuesta disponer de una síntesis compartida y actualizada de lo que requiere atención.</p></li>
+                <li><h3>Información sin una orientación clara para actuar</h3><p>Conocer una cifra o detectar una desviación es un punto de partida. Los equipos necesitan contexto para decidir qué revisar, qué prioridad darle y qué alternativas conviene valorar.</p></li>
+              </ol>
+              <button class="btn btn--primary" type="button" data-go="solution">Ver la solución <span aria-hidden="true">→</span></button>
+            </div>
+
+            <div class="ps__panel" role="tabpanel" id="panelSolution" aria-labelledby="tabSolution" hidden>
+              <p class="lead">Cada organización tiene su estructura, sus procesos, sus objetivos y su manera de trabajar. Una tecnología útil debe poder representar esa realidad y ayudar a sus equipos a interpretarla.</p>
+              <p>Por eso, la implementación de PANELMAP comienza por comprender qué necesitas resolver y qué información explica tu actividad. A partir de ahí, conectamos las fuentes, representamos sus relaciones y configuramos las métricas y análisis que responden a tus decisiones.</p>
+              <p>La plataforma mantiene una base tecnológica común y se adapta a cada organización en sus datos, su lógica y sus usos. Su alcance puede ampliarse cuando cambian las necesidades o se incorporan nuevas fuentes.</p>
+              <ul class="checks">
+                <li>Diagnóstico de partida personalizado</li>
+                <li>Adaptación a la realidad de tu organización</li>
+                <li>Integración segura y relacional de datos</li>
+                <li>Visor 360 del flujo real de tu organización</li>
+                <li>IA orientada a la toma de decisiones</li>
+              </ul>
+              <button class="btn btn--ghost-dark" type="button" data-go="problem"><span aria-hidden="true">←</span> Volver al problema</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IA -->
+    <section class="section section--dark" id="ia">
+      <div class="container">
+        <div class="split">
+          <div class="reveal">
+            <p class="eyebrow eyebrow--light">Inteligencia Artificial</p>
+            <h2 class="h2">IA con el contexto que necesita tu organización.</h2>
+          </div>
+          <p class="lead reveal">En PANELMAP la Inteligencia Artificial no es un añadido: forma parte del diseño de la plataforma y de sus motores de análisis. Trabaja sobre tus datos conectados y sobre un modelo de tu organización, con sus áreas, procesos, relaciones y objetivos. Gracias a esa base, la IA puede responderte en cada momento a tres preguntas:</p>
+        </div>
+
+        <div class="ask reveal" aria-label="Las tres preguntas">
+          <div class="ask__bar">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg>
+            <span class="ask__text" id="askText" aria-live="polite">¿Qué está pasando?</span><span class="ask__caret" aria-hidden="true"></span>
+          </div>
+          <ul class="ask__chips" id="askChips">
+            <li><button type="button" class="is-active">¿Qué está pasando?</button></li>
+            <li><button type="button">¿Dónde tengo un problema?</button></li>
+            <li><button type="button">¿Por qué ocurre?</button></li>
+          </ul>
+        </div>
+
+        <div class="cards cards--3 cards--dark">
+          <article class="card reveal">
+            <span class="card__num">01</span>
+            <h3>Avisos y recomendaciones</h3>
+            <p>PANELMAP te avisa cuando algo afecta a los objetivos o problemas que has definido, y te propone posibles líneas de actuación. Tus equipos comparan las alternativas y deciden cómo actuar: la plataforma aporta la información y la decisión sigue siendo vuestra.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card__num">02</span>
+            <h3>Patrones entre áreas</h3>
+            <p>Detecta comportamientos que se repiten y variables que evolucionan juntas, también cuando pertenecen a áreas distintas. Te sirve para investigar una incidencia, entender un cambio en la actividad o explicar por qué un equipo, una zona o un proceso rinde diferente que otro.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card__num">03</span>
+            <h3>Contexto para cada desviación</h3>
+            <p>Cuando un indicador se desvía, PANELMAP lo relaciona con los objetivos, referencias y otros indicadores que ayudan a interpretarlo. Así puedes centrarte en las desviaciones que de verdad afectan al funcionamiento o a los resultados, y dejar de lado el ruido.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card__num">04</span>
+            <h3>Pregunta en lenguaje natural</h3>
+            <p>Consulta tus datos como se lo preguntarías a un compañero, sin fórmulas ni informes previos. El asistente responde con la información conectada y te ayuda a centrar el análisis en lo que importa a tu equipo. Cada persona ve solo lo que le permiten las fuentes, los análisis y los permisos configurados.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card__num">05</span>
+            <h3>Resúmenes de la evolución</h3>
+            <p>PANELMAP reúne periódicamente los cambios, indicadores y señales más relevantes en un resumen que todo el equipo puede leer igual. Te ayuda a ver qué merece una investigación más a fondo y cómo encaja en la evolución general de la organización.</p>
+          </article>
+          <article class="card card--accent reveal">
+            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg></span>
+            <h3>Datos e IA en tu entorno. Decisiones en manos de tus equipos</h3>
+            <p>Los datos y los motores de IA se procesan en la infraestructura local del cliente. Los permisos y las condiciones de acceso, soporte y supervisión se definen con los responsables de la organización.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CÓMO FUNCIONA -->
+    <section class="proc" id="como-funciona" data-phase="0">
+      <canvas class="proc__scene" id="procScene" role="img" aria-label="Escena 3D del proceso de PANELMAP: las fuentes de datos alimentan un modelo conectado de la organización, que genera métricas, consultas, recomendaciones y decisiones bajo una capa de gobernanza."></canvas>
+
+      <div class="container proc__head">
+        <div class="proc__intro">
+          <p class="eyebrow eyebrow--light">Cómo funciona</p>
+          <h2 class="proc__title">De los datos de tu organización a las decisiones de tus equipos.</h2>
+          <p class="proc__hint">Arrastra para girar la escena · Pulsa sus elementos</p>
+        </div>
+        <div class="proc__phase" aria-live="polite">
+          <p class="proc__n" id="procN">Fase 01</p>
+          <h3 class="proc__t" id="procT">Conectamos y preparamos la información</h3>
+          <p class="proc__d" id="procD">Revisamos las fuentes disponibles e incorporamos los datos acordados, desde sistemas de gestión hasta documentos, ubicación o flujos en directo. Preparamos la información para que pueda relacionarse y utilizarse en los análisis definidos.</p>
+        </div>
+      </div>
+
+      <div class="container proc__bottom">
+        <div class="proc__steps" role="tablist" aria-label="Fases del proceso">
+          <button role="tab" class="proc-step" aria-selected="true" data-phase="0"><span class="proc-step__bar"><i></i></span><span class="proc-step__n">01</span><span class="proc-step__t">Conectar</span></button>
+          <button role="tab" class="proc-step" aria-selected="false" data-phase="1" tabindex="-1"><span class="proc-step__bar"><i></i></span><span class="proc-step__n">02</span><span class="proc-step__t">Representar</span></button>
+          <button role="tab" class="proc-step" aria-selected="false" data-phase="2" tabindex="-1"><span class="proc-step__bar"><i></i></span><span class="proc-step__n">03</span><span class="proc-step__t">Analizar</span></button>
+          <button role="tab" class="proc-step" aria-selected="false" data-phase="3" tabindex="-1"><span class="proc-step__bar"><i></i></span><span class="proc-step__n">04</span><span class="proc-step__t">Consultar</span></button>
+          <button role="tab" class="proc-step" aria-selected="false" data-phase="4" tabindex="-1"><span class="proc-step__bar"><i></i></span><span class="proc-step__n">05</span><span class="proc-step__t">Decidir y seguir</span></button>
+        </div>
+        <div class="proc__ctrl">
+          <button type="button" class="proc-btn" id="procPrev" aria-label="Fase anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg></button>
+          <button type="button" class="proc-btn proc-btn--play" id="procPlay" aria-label="Pausar recorrido" aria-pressed="true">
+            <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14"/></svg>
+            <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          <button type="button" class="proc-btn" id="procNext" aria-label="Fase siguiente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></button>
+        </div>
+      </div>
+
+      <p class="proc__note">Representación conceptual con un ejemplo ilustrativo. Fuentes, capacidades y actualización según cada implementación.</p>
+
+      <div class="sr-only">
+        <p>Fuentes que se pueden conectar o desconectar:</p>
+        <button type="button" data-a11y-src="erp">Sistemas de gestión</button>
+        <button type="button" data-a11y-src="docs">Documentos</button>
+        <button type="button" data-a11y-src="act">Actividad y ubicación</button>
+        <button type="button" data-a11y-src="ctx">Contexto externo</button>
+        <p>Gobernanza:</p>
+        <button type="button" data-a11y-gov="perm">Permisos</button>
+        <button type="button" data-a11y-gov="trace">Trazabilidad</button>
+        <button type="button" data-a11y-gov="sup">Supervisión</button>
+      </div>
+    </section>
+
+    <!-- PARA QUIÉN -->
+    <section class="section" id="para-quien">
+      <div class="container">
+        <div class="reveal narrow">
+          <p class="eyebrow">Para quién trabajamos</p>
+          <h2 class="h2">Para quienes necesitan comprender el conjunto y decidir dónde actuar.</h2>
+          <p class="lead">Trabajamos con empresas, organizaciones e instituciones que quieren conectar información de distintas fuentes y utilizarla para mejorar su funcionamiento. Adaptamos la plataforma a sus objetivos, sus procesos y las decisiones que necesitan apoyar.</p>
+        </div>
+        <div class="cards cards--3">
+          <article class="card card--audience reveal">
+            <p class="card__tag">01 / Empresas</p>
+            <h3>Conecta la actividad con los resultados del negocio</h3>
+            <p>Una visión compartida para comprender cómo se relacionan clientes, contratos, operaciones, recursos y resultados. Ayudamos a investigar desviaciones, detectar oportunidades de mejora y coordinar decisiones entre áreas y unidades de negocio.</p>
+          </article>
+          <article class="card card--audience reveal">
+            <p class="card__tag">02 / Organizaciones</p>
+            <h3>Coordina información, equipos y objetivos comunes</h3>
+            <p>Entidades con distintos equipos, proyectos, servicios o sedes necesitan interpretar su actividad como un conjunto. PANELMAP conecta información para comparar su evolución, identificar dependencias y orientar prioridades con criterios compartidos.</p>
+            <p class="card__note">Puede resultar útil para asociaciones, fundaciones, redes de entidades u otras estructuras organizativas con necesidades de gestión conectada. El alcance se define a partir de su realidad y sus datos.</p>
+          </article>
+          <article class="card card--audience reveal">
+            <p class="card__tag">03 / Instituciones</p>
+            <h3>Una lectura conjunta para orientar la gestión y los servicios</h3>
+            <p>Relaciona información sobre demanda, servicios, recursos, presupuestos y territorio. Ayudamos a comprender necesidades, investigar diferencias y establecer prioridades de actuación con seguimiento de sus resultados.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--sky" id="faq">
+      <div class="container faq">
+        <div class="faq__intro reveal">
+          <p class="eyebrow">Preguntas frecuentes</p>
+          <h2 class="h2">Resolvemos tus dudas.</h2>
+          <label class="search">
+            <span class="sr-only">Buscar en las preguntas</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+            <input type="search" id="faqSearch" placeholder="Buscar: ERP, tiempo real, datos…" autocomplete="off">
+          </label>
+          <p class="faq__empty" id="faqEmpty" hidden>No hay preguntas que coincidan. <a href="#contacto">Pregúntanos directamente.</a></p>
+        </div>
+        <div class="faq__list" id="faqList">
+          <details><summary>¿Qué es PANELMAP?</summary><div><p>PANELMAP es una empresa tecnológica de IA nativa. Su Decision Intelligence Platform interconecta y analiza información de distintas fuentes para ayudar a comprender el funcionamiento de una organización, detectar patrones y orientar sus decisiones y actuaciones.</p></div></details>
+          <details><summary>¿Qué significa que PANELMAP sea de IA nativa?</summary><div><p>Significa que la Inteligencia Artificial forma parte del diseño de la plataforma y de sus motores de análisis. Se utiliza sobre datos conectados y sobre la representación de la organización para explorar patrones, sintetizar información y apoyar recomendaciones.</p><p>La expresión no implica por sí sola que cada modelo de IA sea desarrollado o entrenado desde cero por PANELMAP.</p></div></details>
+          <details><summary>¿Qué son los datos directos e indirectos?</summary><div><p>Los datos directos describen de forma explícita una actividad o un resultado, como una transacción o una solicitud. Los indirectos aportan evidencias adicionales para interpretar una situación, como información de incidencias o del entorno.</p><p>Su papel depende de la pregunta analizada. Las fuentes externas pueden aportar ambos tipos de información.</p></div></details>
+          <details><summary>¿Qué problema resuelve?</summary><div><p>La información suele estar repartida entre sistemas, documentos y equipos, lo que dificulta comprender sus relaciones y utilizarla para decidir.</p><p>PANELMAP conecta esas piezas con la lógica de la organización y ofrece métricas, análisis, avisos y recomendaciones para investigar cambios y orientar prioridades.</p></div></details>
+          <details><summary>Si ya tenemos un ERP, ¿para qué necesitamos PANELMAP?</summary><div><p>PANELMAP puede aprovechar la información del ERP y relacionarla con otras fuentes para ampliar la lectura de la organización.</p><p>Su utilidad aparece cuando necesitas interpretar conexiones entre actividad, recursos y resultados que tu configuración actual no cubre. Ese valor adicional se concreta al definir el proyecto.</p></div></details>
+          <details><summary>¿Los ERP no incluyen ya análisis e IA?</summary><div><p>Un ERP puede incorporar cuadros de mando, análisis e IA. Por eso revisamos qué necesidades tienes cubiertas y cuáles quedan por resolver.</p><p>La propuesta de PANELMAP se evalúa según las fuentes, las relaciones y las decisiones que necesitas abordar, sin dar por supuesta una ventaja por utilizar una herramienta adicional.</p></div></details>
+          <details><summary>¿Qué aporta si ya utilizamos Power BI u otra herramienta de análisis?</summary><div><p>Revisamos los modelos e integraciones que tienes desarrollados. PANELMAP puede aportar una representación conectada de la organización, motores analíticos e IA y acompañamiento para acercar esa inteligencia a la gestión.</p><p>El alcance debe complementar las capacidades que ya utilizas.</p></div></details>
+          <details><summary>¿Qué tipos de datos puede conectar?</summary><div><p>El proyecto puede incorporar registros de negocio, bases de datos, documentos y otras fuentes no estructuradas, además de información geoespacial o flujos en directo. También puede integrar fuentes externas que aporten contexto.</p><p>Cada conexión se acuerda según su accesibilidad, calidad, utilidad y condiciones de uso.</p></div></details>
+          <details><summary>¿PANELMAP funciona en tiempo real?</summary><div><p>La actualización depende de cada fuente y del procesamiento necesario.</p><p>Cuando los sistemas de origen y la integración lo permiten, la plataforma puede reflejar su evolución en tiempo real. Otras fuentes se actualizan periódicamente según las necesidades acordadas.</p></div></details>
+          <details><summary>¿Es una herramienta estándar o se adapta a cada organización?</summary><div><p>PANELMAP combina una base tecnológica común con una implementación adaptada a sus datos, procesos, objetivos y responsabilidades.</p><p>Definimos con tus equipos qué fuentes conectar, cómo representar sus relaciones y qué métricas y análisis necesitan. El alcance puede crecer a medida que cambian las necesidades.</p></div></details>
+          <details><summary>¿Puede anticipar escenarios y recomendar cómo actuar?</summary><div><p>Los motores analíticos y de IA ayudan a investigar patrones y desarrollar recomendaciones.</p><p>Los análisis prospectivos y las simulaciones se incorporan cuando existen datos y modelos adecuados para el objetivo. Las estimaciones se interpretan según sus hipótesis y condiciones, y los responsables valoran su aplicación.</p></div></details>
+          <details><summary>¿PANELMAP decide o ejecuta acciones automáticamente?</summary><div><p>Los equipos responsables utilizan la inteligencia generada para valorar alternativas y decidir.</p><p>La ejecución automática de una actuación requiere un flujo, integraciones, permisos y supervisión definidos. Una recomendación o una sugerencia de automatización no implica que el sistema actúe de forma autónoma.</p></div></details>
+          <details><summary>¿Dónde se procesan los datos y quién puede acceder?</summary><div><p>Los datos y los motores de IA se procesan en la infraestructura local del cliente. Los permisos definen quién puede utilizar la información y los análisis.</p><p>Las conexiones y condiciones de soporte, acceso y operación se concretan con los responsables técnicos de la organización.</p></div></details>
+          <details><summary>¿Cómo se implementa y qué necesita nuestro equipo?</summary><div><p>Revisamos objetivos y fuentes, definimos el alcance y configuramos el modelo, los motores, los análisis y los permisos.</p><p>Participan quienes conocen los sistemas, los datos y las decisiones de gestión. El despliegue puede abarcar varias áreas o desarrollarse por fases; una prueba piloto no es un requisito universal.</p></div></details>
+          <details><summary>¿Cómo se define el presupuesto y se evalúa el valor?</summary><div><p>La propuesta concreta las fuentes, los análisis, el despliegue y el acompañamiento, junto con sus condiciones de ampliación.</p><p>Los objetivos e indicadores acordados permiten evaluar la utilidad de la plataforma y seguir la evolución de los resultados de gestión.</p></div></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section section--blue" id="contacto">
+      <div class="container contact">
+        <div class="contact__intro reveal">
+          <p class="eyebrow eyebrow--light">Contacta</p>
+          <h2 class="h2">Hablemos de las decisiones que quieres mejorar.</h2>
+          <p class="lead">Cuéntanos qué necesitas comprender, qué procesos te gustaría revisar o qué decisiones quieres apoyar. Exploramos contigo cómo puede encajar PANELMAP en tu organización.</p>
+        </div>
+        <form class="form reveal" id="contactForm" novalidate data-endpoint="">
+          <div class="field">
+            <label for="f-name">Nombre y apellido</label>
+            <input id="f-name" name="nombre" type="text" autocomplete="name" required>
+            <span class="field__error">Indica tu nombre y apellido.</span>
+          </div>
+          <div class="field">
+            <label for="f-email">Correo profesional</label>
+            <input id="f-email" name="correo" type="email" autocomplete="email" required>
+            <span class="field__error">Introduce un correo válido.</span>
+          </div>
+          <div class="field">
+            <label for="f-org">Organización</label>
+            <input id="f-org" name="organizacion" type="text" autocomplete="organization" required>
+            <span class="field__error">Indica tu organización.</span>
+          </div>
+          <div class="field">
+            <label for="f-type">Tipo de entidad</label>
+            <select id="f-type" name="tipo_entidad" required>
+              <option value="">Selecciona una opción</option>
+              <option>Empresa</option>
+              <option>Organización</option>
+              <option>Institución / Administración</option>
+              <option>Otra</option>
+            </select>
+            <span class="field__error">Selecciona el tipo de entidad.</span>
+          </div>
+          <div class="field">
+            <label for="f-role">Cargo o responsabilidad</label>
+            <input id="f-role" name="cargo" type="text" autocomplete="organization-title" required>
+            <span class="field__error">Indica tu cargo.</span>
+          </div>
+          <div class="field">
+            <label for="f-phone">Teléfono de contacto</label>
+            <input id="f-phone" name="telefono" type="tel" autocomplete="tel" pattern="[0-9+\s()\-]{7,}">
+            <span class="field__error">Revisa el número de teléfono.</span>
+          </div>
+          <button class="btn btn--white btn--lg form__submit" type="submit">Solicitar una demo <span aria-hidden="true">↗</span></button>
+          <p class="form__status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <a href="#inicio" class="brand" aria-label="PANELMAP, inicio">
+          <svg class="brand__mark" viewBox="0 0 48 40" aria-hidden="true">
+            <circle cx="5" cy="17" r="4.5" fill="currentColor"/>
+            <circle cx="16" cy="17" r="3" fill="currentColor"/>
+            <path d="M24 37V6h9.5a10.5 10.5 0 0 1 0 21H26" fill="none" stroke="var(--blue-500)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="33" cy="16.5" r="3.4" fill="currentColor"/>
+          </svg>
+          <span class="brand__name">PANELMAP</span>
+        </a>
+        <p class="footer__tag">Decision Intelligence Platform.<br>Una plataforma común. Una lectura propia de tu organización.</p>
+      </div>
+      <nav class="footer__links" aria-label="Pie de página">
+        <a href="#que-es">Plataforma</a>
+        <a href="#ia">Inteligencia Artificial</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#para-quien">Para quién</a>
+        <a href="#faq">Preguntas frecuentes</a>
+      </nav>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year">2026</span> PANELMAP</span>
+      <span>www.panelmap.ai</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/proceso.js" defer></script>
+</body>
+</html>
